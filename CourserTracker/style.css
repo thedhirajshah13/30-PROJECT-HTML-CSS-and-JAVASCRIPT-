@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 100%;
+    width: 350px;
+    margin-bottom: 10%;
+  
+
+
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    color: #999;
+        border-radius: 50%;
+        border: 3px solid #f1f1f1;
+        width: 30px;
+        height: 30px;
+        transition: .8s ease-in-out;
+    
+
+
+}
+.circle.active{
+    border-color: #4186AD;
+}
+.container::before{
+    content: '';
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.path{
+    background-color: #4186AD;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    transform: translateY(-50%);
+    transition: .4s ease-in;
+    z-index: -1;
+}
+.button{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+
+}
+.btn:enabled{
+    color: white;
+    background-color: green;
+    width: 70px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 10%;
+}
+.btn:disabled{
+    width: 70px;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 10%;
+}
+
+

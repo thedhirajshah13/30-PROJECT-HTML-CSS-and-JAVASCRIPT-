@@ -1,0 +1,46 @@
+body {
+  background-image: linear-gradient(90deg, #f56f56, #f56f56);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .input1 {
+  width: 42px;
+  height: 50px;
+  transition: width 1s ease;
+  font-size: 25px;
+}
+
+.container .btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  top: 0;
+  left: 0;
+  transition:transform 1s ease;
+  outline: none;
+}
+.container .btn:focus,
+.container .input1:focus {
+  outline: none;
+}
+
+.container.active .input1 {
+  width: 300px;
+}
+.container.active .btn {
+  transform: translateX(258px);
+}

@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #111,#f1f1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img{
+    width: 1000px;
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 5px 4px 3px 1px #111;
+    transition:width .3s ease-in-out;
+   
+}
+
+ 

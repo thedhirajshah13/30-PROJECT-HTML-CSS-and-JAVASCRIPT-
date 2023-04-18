@@ -1,0 +1,45 @@
+.image{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 100px;
+    
+}
+h1{
+    text-align: center;
+}
+img{
+    border: 1px solid black;
+    height: 445px;
+    width: 90px;
+    border-radius: 25px;
+   transition: 1s ease-in;
+    margin: 5px;
+    border: none;
+    box-shadow: 0 0 5px grey;
+    
+}
+.image :nth-child(3),.image :nth-child(6){
+    
+   transform: translateY(-2.5%) ;
+   
+}
+.image :nth-child(2),.image :nth-child(7){
+    
+    transform: translateY(-5%);
+    
+ }
+ .image :nth-child(1),.image :nth-child(8){
+    
+    transform: translateY(-7.5%);
+    transform: scale(1,1);
+    
+ }
+
+
+.active{
+    
+   width: 245px;
+     transition: 1ss ease-in-out .4s;
+
+}

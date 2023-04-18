@@ -1,0 +1,12 @@
+:root{
+    --primary-color:#111;
+    --secondary-color:#fff;
+}
+
+.dark{
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
+}
+#icon{
+    width: 30px;
+}
