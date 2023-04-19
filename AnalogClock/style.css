@@ -1,0 +1,117 @@
+:root {
+    --primary-color:#fff;
+    --secondary-color:#111;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+html{
+   transition: all .3s ease-in;
+}
+html.dark {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+html.dark {
+  background-color: #111;
+  color: var(--secondary-color);
+}
+.mode{
+    width: 120px;
+    height: 40px;
+    border-radius: 5%;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+.analog {
+  position: relative;
+  height: 100px;
+}
+.center {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: grey;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-35%, 73px);
+}
+.center::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+.analog .hour {
+  display: block;
+  position: absolute;
+
+  width: 3px;
+  height: 60px;
+  transform: translateY(25%) rotate(0deg);
+  transform-origin: bottom center;
+
+  background-color: var(--secondary-color);
+}
+.analog .minutes {
+  display: block;
+  position: absolute;
+
+  width: 3px;
+  height: 80px;
+  transform: rotate(0deg);
+  transform-origin: bottom center;
+
+  background-color: var(--secondary-color);
+
+}
+.analog .second {
+  display: block;
+  position: absolute;
+
+  width: 3px;
+  height: 80px;
+  transform: rotate(0deg);
+  transform-origin: bottom center;
+  background-color: #FF5733;
+  transition: transform 0.05s ease-in;
+}
+.digital {
+  font-size: 40px;
+  margin: 60px 0 0 0;
+}
+.btn {
+  margin-top: 75px;
+}
+.calender{
+    padding-top: 10px;
+    color: #7d7a7a;
+}
+.date{
+    color: var(--secondary-color);
+    font-weight: 900;
+}
