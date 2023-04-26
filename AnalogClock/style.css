@@ -20,7 +20,7 @@ html.dark {
   --secondary-color: #fff;
 }
 html.dark {
-  background-color: #111;
+  background-color: var(--primary-color);
   color: var(--secondary-color);
 }
 .mode{

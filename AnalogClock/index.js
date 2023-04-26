@@ -7,9 +7,7 @@ const btn = document.querySelector('.mode')
 const calender = document.querySelector('.calender')
 let day = new Date().getHours() >= 12 ? 'PM' : 'AM'
 
-let hr = 0;
-let min = 0;
-let sec = 0;
+
 setInterval(time, 1000)
 
 
